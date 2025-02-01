@@ -24,6 +24,25 @@ public class UserInput {
         System.out.print("Enter your choice: ");
         return scanner.nextInt();
     }
+    public double getNumber() {
+        System.out.print("Enter a number: ");
+        return scanner.nextDouble();
+    }
 
+    public int getInteger() {
+        System.out.print("Enter an integer: ");
+        return scanner.nextInt();
+    }
+
+    public double[] getArray() {
+        System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
+        double[] arr = new double[size];
+        System.out.println("Enter array elements:");
+        for (int i = 0; i < size; i++) {
+            arr[i] = scanner.nextDouble();
+        }
+        return arr;
+    }
     
 }
