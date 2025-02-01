@@ -1,5 +1,7 @@
 package Assignment1;
 
+import java.util.ArrayList;
+
 public class Calculator {
 
     // Addition of two numbers
@@ -26,11 +28,24 @@ public class Calculator {
         return a / b;
     }
 
-    // Fibonacci sequence using recursion
-    public int fibonacci(int n) {
-        if (n <= 1) return n;
-        return fibonacci(n - 1) + fibonacci(n - 2);
+    // Fibonacci sequence using loop
+    public ArrayList<Integer> fibonacci(int n) {
+        ArrayList<Integer> res = new ArrayList<>();
+        if (n < 1) {
+            return null;
+        }
+        int a = 0, b = 1, sum = 0;
+        res.add(a);
+        res.add(b);
+        for (int i = 2; i < n; i++) {
+            sum = a + b;
+            a = b;
+            b = sum;
+            res.add(sum);
+        }
+        return res;
     }
+
 
     // Sum of array elements
     public double sumArray(double[] arr) {
