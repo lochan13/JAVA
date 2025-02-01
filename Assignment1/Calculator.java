@@ -46,7 +46,7 @@ public class Calculator {
         return sumArray(arr) / arr.length;
     }
 
-    // Variance of array elements
+    // Variance of array elements 
     public double varianceArray(double[] arr) {
         double mean = meanArray(arr);
         double sumSquaredDiff = 0;
