@@ -1,5 +1,11 @@
 package Assignment1;
 
+/**
+ * Name: LOCHAN PAUDEL
+ * PRN: 23070126170
+ * Batch: 2023-27
+ */
+
 public class Main {
     public static void main(String[] args) {
         UserInput userInput = new UserInput();
