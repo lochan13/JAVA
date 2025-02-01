@@ -12,7 +12,7 @@ public class Main {
         Calculator calculator = new Calculator();
 
         int choice;
-        do {
+        do{
             choice = userInput.getMenuChoice();
             switch (choice) {
                 case 1:
