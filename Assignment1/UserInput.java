@@ -43,6 +43,6 @@ public class UserInput {
             arr[i] = scanner.nextDouble();
         }
         return arr;
-    }
+    } 
     
 }
